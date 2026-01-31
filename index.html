@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>Bhanu's Portfolio</title>
+</head>
+<body>
+    <header>
+          <h2>BHANU PRASHANTH BANGARU</h2>
+          <h4>Web Developer and Software Engineer</h4>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#admin-login" onclick="show_adminlogin(event)">Admin login</a></li>
+    </ul>
+    </nav>
+    <button id="toggle-theme">Toggle Theme</button>
+    <main>
+        <section class="style" id="experience">
+            <h2>Experience</h2>
+
+            <h3>Education zone</h3>
+            <h4>Head of curriculum and Trainer</h4>
+            <p>Helped Building content for different courses and training programs. </p>
+
+            
+            <h3>Some tech company</h3>
+            <h4>software Engineer - ML</h4>
+            <p>Helped Building content for different courses and training programs. </p>
+
+            
+            <h3>software solutions</h3>
+            <h4>Trainee Engineer</h4>
+            <p>Helped Building content for different courses and training programs. </p>
+        </section>
+
+
+         <section class="style" id="education">
+            <h2 id="animateEdu">Education</h2>
+
+            <h3>St Mary's integrated campus</h3>
+            <h4>Bachelor of technology in computer science</h4>
+            <p>Learned about computer technology </p>
+
+            
+            <h3>Telangana Minority resedential college</h3>
+            <h4>Intermediate</h4>
+            <p>Completed my intermediate education in Mathematics Physics and Chemistry</p>
+
+            
+            <h3>Modern High School</h3>
+            <h4>SSC(10th)</h4>
+            <p>completed my 10th grade education with 9.7 CGPA</p>
+        </section>
+
+            <section class="style" id="projects">
+                <h2>Projects</h2>
+    
+                <h3>Portfolio Website</h3>
+                <h4>Personal Portfolio</h4>
+                <p>A personal portfolio website to showcase my skills and projects.</p>
+    
+                
+                <h3>Task Manager App</h3>
+                <h4>Productivity Tool</h4>
+                <p>A web application to help users manage their tasks efficiently.</p>
+    
+                
+                <h3>E-commerce Website</h3>
+                <h4>Online Store</h4>
+                <p>An e-commerce platform for buying and selling products online.</p>
+            </section>
+            <section class="style" id="skills">
+                <h2>Skills</h2>
+    
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+    
+                
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+    
+                
+                <h3>Database Management</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </section>
+            <section class="style" id="contact">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required><br><br>
+
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" required></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                    <span id="contact-feedback" role="status" aria-live="polite"></span>
+
+                </form>
+            </section>
+            <section class="style" id="admin-login" aria-hidden="true" style="display:none">
+                <h2>Admin Login</h2>
+                <form id="admin-form">
+                    <label for="username">User name:</label>
+                    <input id="username" name="username" type="text" placeholder="Enter your Username" required><br><br>
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" type="password" placeholder="Enter your password" required><br><br>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            <section class="style" id="user-responses" style="display:none">
+                <h2>User responses</h2>
+                <div id="responses-list">
+
+                </div>
+            </section>
+                
+    </main>
+</body>
+</html>
