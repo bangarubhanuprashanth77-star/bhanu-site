@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const userSection = document.getElementById('user-responses');
   const navAdminLink = document.querySelector('nav ul li a[href*="admin-login"]');
   const mainContainer = document.querySelector('main') || document.body;
-0
+
   // Initialize theme from localStorage
   const savedTheme = localStorage.getItem(THEME_KEY);
   if (savedTheme === 'dark') {
